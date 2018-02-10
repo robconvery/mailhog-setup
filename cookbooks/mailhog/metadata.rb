@@ -1,0 +1,7 @@
+name 'mailhog'
+maintainer 'Rob Convery'
+maintainer_email 'robconvery@me.com'
+license 'all_rights'
+description 'Installs/Configures mailhog'
+long_description 'Installs/Configures mailhog'
+version '0.1.0'
