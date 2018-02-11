@@ -8,7 +8,7 @@ execute 'base_update' do
     command 'apt-get update'
 end
 
-packages.each do | p |
+node['base']['packages'].each do | p |
     package p do
         action :install
     end
@@ -25,3 +25,5 @@ end
 package 'nginx' do
     action :install
 end
+
+include_recipe 'mailhog'
