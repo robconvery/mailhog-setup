@@ -82,11 +82,11 @@ Vagrant.configure("2") do |config|
 
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe "base"
-    #chef.add_recipe "mailhog"
+    chef.add_recipe "mailhog"
 
   end
 
-  config.berkshelf.enabled = true
-  config.berkshelf.berksfile_path = "./cookbooks/base/Berksfile"
+  #config.berkshelf.enabled = true
+  #config.berkshelf.berksfile_path = "./cookbooks/base/Berksfile"
 
 end
